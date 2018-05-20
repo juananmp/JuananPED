@@ -1,0 +1,21 @@
+<h1>Práctica 7. Sistema Cliente-Servidor mediante <em>sockets de Internet</em></h1>
+
+
+<h2>Enunciado</h2>
+
+En esta práctica el grupo deberá elegir una de las dos opciones que se
+proponen a continuación y realizarla.
+
+<h2>Opciones</h2>
+
+<ol>
+    <li>
+	<h3>Cliente-servidor de <a href="practica7c.wiki">charlas
+	<em>online (chat)</em></a>.</h3>
+    </li>
+    <li>
+	<h3>Cliente-servidor de <a href="practica7n.wiki">noticias
+	<em>(news)</em></a>.</h3>
+    </li>
+</ol>
+

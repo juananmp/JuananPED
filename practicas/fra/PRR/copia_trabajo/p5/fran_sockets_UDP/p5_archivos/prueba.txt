@@ -1,0 +1,7 @@
+probando sockets UDP con archivos
+linea dos y la siguiente va a ser la tres
+tres
+cuatro
+y fin que esto se hace largo
+
+

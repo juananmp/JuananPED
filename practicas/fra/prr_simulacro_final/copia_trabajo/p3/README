@@ -1,0 +1,16 @@
+En este directorio debe entregar los ficheros que conforman la respuesta
+a la pregunta cuyo numero coincide con el del directorio (ejemplo: en el
+directorio p4 debe situarse la respuesta a la pregunta 4).
+
+
+
+En este directorio estoy haciendo la pregunta 3 y 4 que se corresponden con el enunciado del simulacro.
+Voy a realizar las conexiones mediante TCP con el puerto 16012 según he calculado siguiendo las pautas del enunciado.
+He creado dos archivos, cliente.py y servidor.py los cuales se puede ejecutar desde consola poniendo 'make cliente' y 'make servidor', para ello he modificado el archivo Makefile.
+
+El cliente le pide al servidor la fecha o la hora, y este le responde a la petición con los datos correctos. Además en caso de el cliente haber hecho el pedido mal el servidor le responde con un mensaje de error.
+También he usado el modulo creado en los test para codificar y decodificar, tanto en cliente como en servidor.
+
+
+en la carpeta p4 del repositorio no he añadido nada ya que he añadido todo aqui, el cliente y servidor, por lo que no me ha sido necesario añadirlo en esa carpeta.
+

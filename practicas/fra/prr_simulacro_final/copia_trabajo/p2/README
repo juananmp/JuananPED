@@ -1,0 +1,12 @@
+En este directorio debe entregar los ficheros que conforman la respuesta
+a la pregunta cuyo numero coincide con el del directorio (ejemplo: en el
+directorio p4 debe situarse la respuesta a la pregunta 4).
+
+
+En esta carpeta voy a realizar los test indicados en el enunciado.
+para ello voy a crear dos archivos, uno test.py donde se ejecutaran los test y el cual se puede ejecutar desde consola poniendo 'make test' ya que he modificado el archivo Makefile para que esto sea posible.
+el otro archivo .py es donde voy a escribir los metodos en los que se apoyan los test
+
+
+todo el código esta escrito en PYTHON 3
+
