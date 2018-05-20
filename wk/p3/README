@@ -1,0 +1,12 @@
+Manual de usuario.
+
+De nuevo un caso sencillo de aplicación cliente-servidor.
+----------------------------------------------------------------
+El cliente se conectará al servidor mediante una tubería (pipe), momento en el cual el servidor le contestará con una cadena de caracteres que represente la fecha y la hora (con precisión mínima de 1 segundo) en el formato standard internacional asociado a la localización geográfica (país y zona horaria) del sistema en el que se ejecuta el servidor. El cliente mostrará la respuesta recibida por el servidor en su salida standard. 
+
+
+Una pipe se crea mediante el comando mkfifo /tmp/fifo
+Leer --> cat < /tmp/fifo
+Escribir --> cat > /tmp/fifo
+
+Para usar el comando make deberemos configurar el archivo Makefile

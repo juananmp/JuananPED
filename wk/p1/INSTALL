@@ -1,0 +1,21 @@
+Manual de Python:
+
+	-Comentarios con # y en bloque (3 comillas) """ comentario """
+	-Ojo con los espacios para las clases, funciones etc..
+	-Para imprimir basta con print Juanan
+		count = 10 + 20 
+		print count (30)
+	-Exponencial ** --> 10 ** 2 = 100
+	-El módulo (cociente) % --> 5 % 4 = 1
+	-Problema con las divisiones:
+		21 / 100 según python esto da 0 y no 0.21
+		21 / float(100) esto si dará 0.21
+	-Las variables obviamente se puden sobrescribir
+	-String variable = "juanan"
+	-Problema con algunos caracteres variable = "juanan" "
+		Solución--> print "Hola, \"amigo\" "
+	-Se pueden concatenar strings y numeros
+		"hola" * 3 = holaholahola
+	-La asignacion de las variables mediante string
+		juan = "juan"	--> juan --> respuesta 'juan'
+		del juan --> juan --> error, del sirve para borrar la referencia

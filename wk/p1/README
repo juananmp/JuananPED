@@ -1,0 +1,18 @@
+Manual de usuario.
+
+Pasos a seguir para la realización de un test en python:
+
+	1. Primero escribimos el import del unittest y del archivo donde vamos a tener las funciones donde comprobamos con los tests (e		  n nuestro caso sería  import python_bolos)
+	2. Luego escribiremos el código del test
+	3. Al ejecutar el test (python ficheroDelTest.py) no nos funcionará ya que el import del punto 1, como no hemos creado aún el f           ichero python_bolos nos fallará, luego se cumple el primer paso en la elaboración TDD el test no se podrá compilar)
+	4. Crearemos python_bolos y pondremos el codigo neccesario para que el test se compile
+	5. Vale, una vez creado el fichero y poner simplemente la función con un return, al ejecutar el test, nos aparecerá Ran 1 test 		  PERO FAILED, cumplimos el segundo paso de TDD ver fallarlo, y ahora elaboraremos el código necesario para verlo pasar
+	6. Y efectivamente tras arreglar el test, ya nos aparece Ran 1 test OK!!!!!!!
+
+    Una partida de bolos dura diez rondas, en cada una de las cuales el jugador tiene uno o dos intentos para tirar diez bolos colocados formando un triángulo.
+    Si el jugador tira los diez bolos en el primer intento (esta jugada se denomina "strike"), se anota diez bolos más el número de bolos que tire en sus siguientes dos bolas.
+    Si el jugador tira los diez bolos en el segundo intento (esta jugada se denomina "spare"), se anota diez bolos más el número de bolos que tire en su próxima bola.
+    Si el jugador no tira los diez bolos (esta jugada se llama "ronda abierta" u "open frame") se anota el número de bolos que haya tirado.
+    El marcador se va acumulando en las diez rondas.
+    Tras la última ronda, si es necesario, se lanzan una o dos bolas extra para anotar el bonus final.
+

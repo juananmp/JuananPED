@@ -1,0 +1,4 @@
+Manual de arquitectura.
+El cliente le va a preguntar al usuario por un username
+Un thread separado manejara los mensajes entrantes
+Pulsar eenter para refrescar
