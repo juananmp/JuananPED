@@ -10,6 +10,11 @@ def conexion(socket_conexion):
     men = mensaje.encode("utf-8")
     n_sock.send(men)
 
+def cerrar(elemento):
+    rlist.remove(elemento)
+    # haElegidoMenu.remove(elemento)
+    elemento.close()
+
 def generar_respuesta(datos, elemento):
     if not (elemento in haElegidoMenu) and datos == "Menu":
         haElegidoMenu.append(elemento)
@@ -41,7 +46,7 @@ if __name__ == '__main__':
 
     rlist = [socket_conexion]
     while True:
-        ready_rlist, ready_wlist, ready_xlist = select.select(rlist, [], [])
+        ready_rlist, _, ready_xlist = select.select(rlist, [], [])
 
         for elemento in ready_rlist:
 #la primera vez que se conecta un cliente al servidor, se llama a socket_conexion para aceptar la conexion
@@ -50,7 +55,10 @@ if __name__ == '__main__':
             else:
                 mensaje2 = elemento.recv(1024)
                 datos = mensaje2.decode("utf-8")
-                respuesta = generar_respuesta(datos, elemento)
-                mensaje = respuesta.encode("utf-8")
-                elemento.send(mensaje)
+                if datos:
+                    respuesta = generar_respuesta(datos, elemento)
+                    mensaje = respuesta.encode("utf-8")
+                    elemento.send(mensaje)
+                else:
+                    cerrar(elemento)
 
